@@ -1,6 +1,6 @@
 # pokenum-cookbook
 
-In the grand scheme of things, this doesn't really do much does it? Well at least it produces a working locally running pokenum. Sure you could rewrite it or do this some other way, but that would be less fun.
+In the grand scheme of things, this doesn't really do much does it? Well at least it produces a working locally running pokenum. Sure you could rewrite it or do this some other way, but that would be less fun. This is fun and entertaining because it's the intersection/overlap between Chef and poker.
 
 ## Supported Platforms
 
