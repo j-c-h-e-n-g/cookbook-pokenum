@@ -1,6 +1,6 @@
 name             'pokenum'
-maintainer       'YOUR_NAME'
-maintainer_email 'YOUR_EMAIL'
+maintainer       'Mr Cheng'
+maintainer_email 'devnull@johncheng.com'
 license          'All rights reserved'
 description      'Installs/Configures pokenum'
 long_description 'Installs/Configures pokenum'
