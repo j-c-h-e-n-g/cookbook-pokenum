@@ -2,11 +2,8 @@
 #
 
 
-# centos 6.5 specific 
-%w{git make gcc-c++ php php-devel}.each do |pkg|
-  package pkg do
-    action :upgrade
-  end
+node['pokenum']['packages'].each do |ntppkg|
+  package ntppkg
 end
 
 template '/etc/php.ini' do
