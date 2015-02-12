@@ -22,15 +22,14 @@ end
 
 if node['platform_family'] == 'rhel' 
 
-  execute "download poker-eval source" do
+  execute "download poker-eval" do
     cwd "/tmp"
     command "wget #{node['pokenum']['pokereval_src_url']} && tar xvfz poker-eval-134.0.tar.gz"
     action :run
-    not_if { ::File.exists?("/tmp/pokenum-php") }
+    not_if { ::File.exists?("/tmp/poker-eval-134.0") }
   end
  
-
-  bash "install pokenum php module" do 
+  bash "install poker-eval by source" do 
     cwd "/tmp/poker-eval-134.0"
 
     code <<-EOH
@@ -40,9 +39,8 @@ if node['platform_family'] == 'rhel'
       EOH
 
     action :run
-    not_if { ::File.exists?("/tmp/pokenum-php") }
+    not_if { ::File.exists?("/tmp/poker-eval-134.0") }
   end 
-
 
 end 
 
