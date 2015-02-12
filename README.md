@@ -15,7 +15,7 @@ In the grand scheme of things, this doesn't really do much does it? Well at leas
 * Ubuntu 12.04
 * Ubuntu 14.04
 
-... having issues with CentOS - *.so PHP extension can't load but phpize seems to finish. hmmm.
+... having issues with CentOS - `*.so` PHP extension can't load but `phpize` seems to finish. hmmm.
 
 
 
