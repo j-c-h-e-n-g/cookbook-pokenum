@@ -29,12 +29,20 @@ if node['platform_family'] == 'rhel'
     not_if { ::File.exists?("/tmp/pokenum-php") }
   end
  
-  execute "source installation of poker-eval" do
+
+  bash "install pokenum php module" do 
     cwd "/tmp/poker-eval-134.0"
-    command "./configure; make; make install"
+
+    code <<-EOH
+      ./configure
+      make
+      make install
+      EOH
+
     action :run
     not_if { ::File.exists?("/tmp/pokenum-php") }
-  end
+  end 
+
 
 end 
 
