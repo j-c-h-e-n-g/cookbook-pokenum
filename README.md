@@ -4,12 +4,12 @@ This lets you speak PHP to poker-eval. It's wrapped up in chef and Test Kitchen.
 
 ## Supported Platforms
 
-We get successful chef runs via Test Kitchen for the following:
+Chef converges sucessfully for these:
 
 * Ubuntu 12.04
 * Ubuntu 14.04
 
-... but having issues with CentOS - `*.so` PHP extension can't load but `phpize` seems to finish. hmmm.
+but not for CentOS - `*.so` PHP extension can't load but `phpize` seems to finish. hmmm.
 
 
 
