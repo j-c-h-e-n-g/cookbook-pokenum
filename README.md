@@ -29,4 +29,4 @@ Include `pokenum` in your node's `run_list`:
 
 ## License and Authors
 
-Author:: John Cheng (<devnull@johncheng.com>)
+Author:: John Cheng (<github@johncheng.com>)
