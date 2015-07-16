@@ -18,30 +18,6 @@ template '/tmp/test.php' do
   group "root"
 end
 
-if node['platform_family'] == 'rhel' 
-
-  execute "download poker-eval" do
-    cwd "/tmp"
-    command "wget #{node['pokenum']['pokereval_src_url']} && tar xvfz poker-eval-134.0.tar.gz"
-    action :run
-    not_if { ::File.exists?("/tmp/poker-eval-134.0") }
-  end
- 
-  bash "install poker-eval by source" do 
-    cwd "/tmp/poker-eval-134.0"
-
-    code <<-EOH
-      ./configure
-      make
-      make install
-      EOH
-
-    action :run
-    not_if { ::File.exists?("/tmp/poker-eval-134.0") }
-  end 
-
-end 
-
 execute "git-clone-pokenum-php" do
   cwd "/tmp"
   command "git clone https://github.com/j-c-h-e-n-g/pokenum-php.git"
