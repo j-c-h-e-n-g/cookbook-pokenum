@@ -1,6 +1,9 @@
 # cookbook-pokenum
 
-This lets you speak PHP to poker-eval. It's wrapped up in chef and Test Kitchen.
+This lets you speak PHP to poker-eval. It's wrapped up in chef and Test Kitchen. Basically
+it does the following in a chef-specific way: 
+https://github.com/steevel/pokenum-php/blob/master/INSTALL
+
 
 ## Supported Platforms
 
