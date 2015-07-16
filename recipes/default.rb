@@ -1,9 +1,7 @@
 # Recipe:: default
-#
 
-
-node['pokenum']['packages'].each do |ntppkg|
-  package ntppkg
+node['pokenum']['packages'].each do |pkg|
+  package pkg
 end
 
 template node['pokenum']['phpini_path'] do
