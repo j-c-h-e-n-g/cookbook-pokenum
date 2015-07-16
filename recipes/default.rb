@@ -20,7 +20,7 @@ end
 
 execute "git-clone-pokenum-php" do
   cwd "/tmp"
-  command "git clone https://github.com/j-c-h-e-n-g/pokenum-php.git"
+  command "git clone https://github.com/steevel/pokenum-php"
   action :run
   not_if { ::File.exists?("/tmp/pokenum-php") }
 end
